@@ -5,7 +5,7 @@ import java.util.*;
 import java.sql.*;
 
 public 	class StockServer extends UnicastRemoteObject implements StockInterface {
-	String url = "jdbc:mysql://192.168.159.132/Stock";
+	String url = "jdbc:mysql://localhost/Stock";
 	Connection conn;
 
 	public StockServer() throws RemoteException {

@@ -53,7 +53,7 @@ public class StockClient extends Frame implements ActionListener {
 		String Stock = txtStockCode.getText();
 		String val;
  		try {
-			String ServerURL = "//192.168.159.132/StockMarket";
+			String ServerURL = "//localhost/StockMarket";
 			StockInterface stockInterface = (StockInterface)Naming.lookup(ServerURL);
 			val = stockInterface.getPrice(Stock);
 			txtareaStockDetails.setText(val);
