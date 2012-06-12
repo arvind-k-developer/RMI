@@ -1,0 +1,45 @@
+Remote Method Invocation
+========================
+
+RMI enables the developer to create distributed Java applications in which the methods of remote Java objects can be called from other Java Virtual Machines running either on the same host or on different hosts scattered across a network.
+
+
+RMI Architecture
+================
+
+   -------------------                          -------------------
+  |                   |                        |                   |
+  |Client Application |                        |Server Application |
+  |                   |                        |                   |
+   -------------------                          ------------------- 
+           ^                                             ^
+           |                                             |
+           |                                             |
+           V                                             V
+   -------------------                          -------------------
+  |                   |                        |                   |
+  |   Client Stub     |                        |   Server Stub     |
+  |                   |                        |                   |
+   -------------------                          ------------------- 
+           ^                                             ^
+           |                                             |
+           |                                             |
+           V                                             V
+   -------------------                          -------------------
+  |                   |                        |                   |
+  | Remote Reference  |                        |  Remote Reference |
+  |     Layer         |                        |      Layer        |
+   -------------------                          ------------------- 
+           ^                                             ^
+           |                                             |
+           |                                             |
+           V                                             V
+   ----------------------------------------------------------------
+  |                                                                |
+  |                     Transport Layer                            |
+  |                                                                |
+   ---------------------------------------------------------------- 
+
+
+ 
+           
